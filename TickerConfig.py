@@ -5,23 +5,23 @@
 # 如果这个时候捡漏捡到的话，也是可以付款成功的，也就是说，捡漏+候补，可以最大程度提升抢票成功率
 
 # 刷票模式：1=刷票 2=候补+刷票
-TICKET_TYPE = 1
+TICKET_TYPE = 2
 
 # 出发日期(list) "2018-01-06", "2018-01-07"
 STATION_DATES = [
-    "2020-01-20"
+    "2020-02-02"
 ]
 
 # 填入需要购买的车次(list)，"G1353"
 # 修改车次填入规则，注：(以前设置的车次逻辑不变)，如果车次填入为空，那么就是当日乘车所有车次都纳入筛选返回
 # 不填车次是整个list为空才算，如果不是为空，依然会判断车次的，这种是错误的写法 [""], 正确的写法 []
-STATION_TRAINS = ["Z83"]
+STATION_TRAINS = ["Z84","Z204"]
 
 # 出发城市，比如深圳北，就填深圳就搜得到
-FROM_STATION = "北京"
+FROM_STATION = "大庆东"
 
 # 到达城市 比如深圳北，就填深圳就搜得到
-TO_STATION = "大庆"
+TO_STATION = "北京"
 
 # 座位(list) 多个座位ex:
 # "商务座",
@@ -42,7 +42,7 @@ IS_MORE_TICKET = True
 # 乘车人(list) 多个乘车人ex:
 # "张三",
 # "李四"
-TICKET_PEOPLES = ["蔡亭亭"]
+TICKET_PEOPLES = ["蔡亭亭","耿鑫"]
 
 # 12306登录账号
 USER = "bihaiwufeng"
@@ -56,7 +56,7 @@ IS_AUTO_CODE = True
 
 # 设置2本地自动打码，需要配置tensorflow和keras库，3为云打码，由于云打码服务器资源有限(为2h4C的cpu服务器)，请不要恶意请求，不然只能关闭服务器
 # ps: 请不要一直依赖云服务器资源，在此向所有提供服务器同学表示感谢
-AUTO_CODE_TYPE = 3
+AUTO_CODE_TYPE = 2
 
 # 此处设置云打码服务器地址，如果有自建的服务器，可以自行更改
 #HOST = "120.77.154.140"
@@ -90,7 +90,7 @@ EMAIL_CONF = {
 
 # 是否开启 server酱 微信提醒， 使用前需要前往 http://sc.ftqq.com/3.version 扫码绑定获取 SECRET 并关注获得抢票结果通知的公众号
 SERVER_CHAN_CONF = {
-    "is_server_chan": False,
+    "is_server_chan": True,
     "secret": ""
 }
 
