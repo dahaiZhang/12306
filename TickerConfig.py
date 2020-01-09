@@ -45,8 +45,8 @@ IS_MORE_TICKET = True
 TICKET_PEOPLES = ["蔡亭亭","耿鑫"]
 
 # 12306登录账号
-USER = "18613853063"
-PWD = "gengxin12306"
+USER = ""
+PWD = ""
 
 # 加入小黑屋时间默认为5分钟，此功能为了防止僵尸票导致一直下单不成功错过正常的票
 TICKET_BLACK_LIST_TIME = 5
