@@ -68,10 +68,10 @@ HTTP_TYPE="https"
 
 #  邮箱配置，如果抢票成功，将通过邮件配置通知给您
 #  列举163
-#  email: "bihaiwufeng@163.com"
+#  email: "xxx@163.com"
 #  notice_email_list: "123@qq.com"
-#  username: "bihaiwufeng@163.com"
-#  password: "zhf123456"
+#  username: "xxx@163.com"
+#  password: "123456"
 #  host: "smtp.163.com"
 #  列举qq  ，qq设置比较复杂，需要在邮箱-->账户-->开启smtp服务，取得授权码==邮箱登录密码
 #  email: "xxx@qq.com"
@@ -81,10 +81,10 @@ HTTP_TYPE="https"
 #  host: "smtp.qq.com"
 EMAIL_CONF = {
     "IS_MAIL": True,
-    "email": "bihaiwufeng@163.com",
-    "notice_email_list": "bihaiwufeng@163.com",
-    "username": "bihaiwufeng@163.com",
-    "password": "zhf123456",
+    "email": "",
+    "notice_email_list": "",
+    "username": "",
+    "password": "",
     "host": "smtp.163.com",
 }
 
